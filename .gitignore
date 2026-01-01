@@ -1,0 +1,27 @@
+# 构建目录
+build/
+cmake-build-*/
+
+# 编译输出
+simplefs-c
+*.o
+*.so
+*.a
+
+# 数据文件
+/data/xfs/data_*
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
