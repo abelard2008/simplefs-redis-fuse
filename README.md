@@ -486,6 +486,32 @@ tail -f /var/log/redis/redis-server.log
 - [Redis 命令参考](https://redis.io/commands)
 - [GNU Make 手册](https://www.gnu.org/software/make/manual/)
 
+
+## 演示
+···
+[root@xfile-123 simple-fs-c]# ./simplefs-c --redis-addr localhost --redis-port 6379 --redis-db 3 --data-dir /data/xfs --mountpoint /opt/simplefs -f -d
+Simple-FS-C Configuration:
+  Redis: localhost:6379 (db: 3)
+  Data Dir: /data/xfs
+  Mount Point: /opt/simplefs
+Connected to Redis
+Initialized storage layer
+Mounting filesystem...
+FUSE library version: 3.10.5
+nullpath_ok: 0
+unique: 2, opcode: INIT (26), nodeid: 0, insize: 56, pid: 0
+INIT: 7.33
+flags=0x13fffffb
+max_readahead=0x00020000
+   INIT: 7.31
+   flags=0x0040f039
+   max_readahead=0x00020000
+   max_write=0x00100000
+   max_background=0
+   congestion_threshold=0
+   time_gran=1
+   unique: 2, success, outsize: 80
+···
 ## 许可证
 
 MIT License
