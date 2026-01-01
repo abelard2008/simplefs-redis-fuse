@@ -488,7 +488,7 @@ tail -f /var/log/redis/redis-server.log
 
 
 ## 演示
-···
+```
 [root@xfile-123 simple-fs-c]# ./simplefs-c --redis-addr localhost --redis-port 6379 --redis-db 3 --data-dir /data/xfs --mountpoint /opt/simplefs -f -d
 Simple-FS-C Configuration:
   Redis: localhost:6379 (db: 3)
@@ -511,7 +511,7 @@ max_readahead=0x00020000
    congestion_threshold=0
    time_gran=1
    unique: 2, success, outsize: 80
-···
+```
 ## 许可证
 
 MIT License
